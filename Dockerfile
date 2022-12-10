@@ -60,4 +60,8 @@ COPY ./artifact/tmux.conf ~/.tmux.conf
 
 # vimrc
 COPY ./artifact/vimrc /root/.vimrc
+
+# alias
+RUN echo "alias python=python3" >> ~/.bashrc
+
 WORKDIR /binary-analysis/working
